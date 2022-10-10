@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 230, 208);
+  font-family: 'Roboto Slab', serif;
+}
+
+div#container {
+  width: 25%;
+  margin: 8.5rem auto;
+  border: 0.27rem solid rgb(112, 85, 50);
+  border-radius: 0.7rem;
+  box-shadow: 0.2rem 0.2rem 0.7rem 0.4rem  rgb(175, 134, 79);
+}
+
+div#display, div#btn, div aside {
+  height: 4rem;
+  background-color: rgb(253, 244, 232);
+  border: 0.1rem solid rgb(177, 149, 113);
+  border-radius: 0.3rem;
+  margin: 0.1rem;
+  padding: 0.9rem 0.2rem;
+}
+
+div#btn, div aside {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0.9rem 0.5rem;
+  height: auto;
+  margin-right: 4rem;
+}
+
+div button {
+  background-color: rgb(224, 210, 192);
+  border: 0.12rem solid rgb(182, 122, 43);
+  border-radius: 0.4rem;
+  box-shadow: 0.03rem 0.14rem 0.2rem 0.12rem rgb(122, 100, 71);
+  font-family: 'McLaren', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div button:active {
+  background-color: rgb(219, 200, 175);
+  box-shadow: 0.09rem 0.2rem 0.2rem 0.12rem rgb(107, 75, 32);
+  transform: translateY(0.04rem);
+}
+
+div button#equal {
+  grid-column: 1 / 4;
+}
+
+div aside {
+  width: 3.9rem;
+  grid-template-columns: auto;
+  position: absolute;
+  right: 32.5rem;
+  top: 12.9rem;
+  margin-right: auto;
+}
