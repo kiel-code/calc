@@ -48,7 +48,6 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       document.getElementById('display').innerText += '=';
       final.push(parseInt(numeric));
       numeric = '';
-      // result.final
       break;
     case '+':
       document.getElementById('display').innerText += '+';
@@ -73,7 +72,6 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       symbolic.push('/');
       final.push(parseInt(numeric));
       numeric = '';
-      break;
   }
   
   let result = final[0];
@@ -92,6 +90,7 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       
     }
   }
+  // document.getElementById('display').innerText += 'result';
   console.log(result)
 })
 
