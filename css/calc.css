@@ -9,7 +9,7 @@ body {
 
 div#container {
   width: 25%;
-  margin: 7.05rem auto;
+  margin: 9rem auto;
   border: 0.27rem solid rgb(112, 85, 50);
   border-radius: 0.7rem;
   box-shadow: 0.2rem 0.2rem 0.7rem 0.4rem  rgb(175, 134, 79);
@@ -29,6 +29,7 @@ div#display, div#btn, div aside {
 div#btn, div aside {
   display: grid;
   grid-template-columns: auto auto auto;
+  /* grid-template-rows: auto auto auto; */
   grid-gap: 0.9rem 0.5rem;
   height: auto;
   margin-right: 4rem;
@@ -51,14 +52,16 @@ div button:active {
 }
 
 div button#equal {
-  grid-column: 1 / 4;
+  grid-column: 2 / 4;
 }
 
 div aside {
   width: 3.9rem;
   grid-template-columns: auto;
   position: absolute;
-  right: 32.5rem;
-  top: 11.4rem;
+  right: 36.06rem;
+  /* 32.5 */
+  top: 13.39rem;
+  /* 11.18/ */
   margin-right: auto;
 }
