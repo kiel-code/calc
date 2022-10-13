@@ -44,11 +44,6 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       document.getElementById('display').innerText += '0';
       numeric += '0';
       break;
-    case '=':
-      document.getElementById('display').innerText += '=';
-      final.push(parseInt(numeric));
-      numeric = '';
-      break;
     case '+':
       document.getElementById('display').innerText += '+';
       symbolic.push('+');
@@ -72,8 +67,11 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       symbolic.push('/');
       final.push(parseInt(numeric));
       numeric = '';
-  }
-  
+      break;
+    case '=':
+       document.getElementById('display').innerText += '=';
+      final.push(parseInt(numeric));
+      numeric = '';
   let result = final[0];
 
   for (let z in final) {
@@ -90,11 +88,7 @@ document.querySelector('#btn').addEventListener('click', (e) => {
       
     }
   }
-  // document.getElementById('display').innerText += 'result';
-  console.log(result)
+    document.getElementById('display').innerText += result;
+  break;
+  }
 })
-
-// let x = 5;
-// let y = 5;
-// let q = x * y;
-// console.log(q)
