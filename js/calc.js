@@ -72,6 +72,7 @@ document.querySelector('#btn').addEventListener('click', (e) => {
        document.getElementById('display').innerText += '=';
       final.push(parseInt(numeric));
       numeric = '';
+      
   let result = final[0];
 
   for (let z in final) {
